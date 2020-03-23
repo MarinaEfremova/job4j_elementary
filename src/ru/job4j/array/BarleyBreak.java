@@ -6,15 +6,16 @@ public class BarleyBreak {
         int[][] table = new int[3][3];
 
         for (int i = 0; i < table.length; i++) {
-            for (int j = 0; j < table[0].length; j++) {
+            for (int j = 0; j < table[i].length; j++) {
                 table[i][j] = 3 * i + j + 1;
             }
         }
 
         for (int i = 0; i < table.length; i++) {
-            for (int j = 0; j < table[0].length; j++) {
-                System.out.println(table[i][j]);
+            for (int j = 0; j < table[i].length; j++) {
+                System.out.print(table[i][j]);
             }
+            System.out.println();
         }
     }
 }
