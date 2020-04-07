@@ -51,9 +51,16 @@ public class License {
 
         License license = (License) o;
 
-        if (owner != null ? !owner.equals(license.owner) : license.owner != null) return false;
-        if (model != null ? !model.equals(license.model) : license.model != null) return false;
-        if (code != null ? !code.equals(license.code) : license.code != null) return false;
+        if (owner != null ? !owner.equals(license.owner) : license.owner != null) {
+            return false;
+        }
+        if (model != null ? !model.equals(license.model) : license.model != null) {
+            return false;
+        }
+        if (code != null ? !code.equals(license.code) : license.code != null) {
+            return false;
+        }
+
         return created != null ? created.equals(license.created) : license.created == null;
     }
 
